@@ -4,7 +4,7 @@ class AppStrings {
   static const String appName    = 'Zando Plus';
   static const String appTagline = 'Votre boutique en ligne';
 
-  static const String baseUrl              = 'https://zando-plus-backend-production.up.railway.app/api';
+  static const String baseUrl              = 'http://10.252.252.32:8000/api';
   static const String productsEndpoint     = '/products';
   static const String categoriesEndpoint   = '/categories';
 

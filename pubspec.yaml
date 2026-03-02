@@ -19,6 +19,8 @@ dependencies:
   cached_network_image: ^3.3.1
   shimmer: ^3.0.0
   equatable: ^2.0.5
+  skeletonizer: ^2.1.3
+  lottie: ^3.1.2
 
 dev_dependencies:
   flutter_test:
@@ -30,6 +32,7 @@ dev_dependencies:
   json_serializable: ^6.8.0
   custom_lint: ^0.6.4
   riverpod_lint: ^2.3.10
+  flutter_native_splash: ^2.4.0
 
 flutter:
   uses-material-design: true
@@ -48,5 +51,16 @@ flutter:
           weight: 800
 
   assets:
+    - assets/animations/
     - assets/images/
-    #- assets/fonts/
+    - assets/fonts/
+    
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/logo.PNG
+  android_12:
+    image: assets/images/logo.PNG
+    color: "#FFFFFF"
+    icon_background_color: "#FFFFFF"
+    fullscreen: true

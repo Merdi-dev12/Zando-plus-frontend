@@ -8,6 +8,8 @@ class Product extends Equatable {
   final String price;
   final int quantity;
   final String imageUrl;
+  final double rating; 
+  final bool isFavorite; 
 
   const Product({
     this.id,
@@ -17,9 +19,10 @@ class Product extends Equatable {
     required this.price,
     required this.quantity,
     required this.imageUrl,
+    this.rating = 0.0, 
+    this.isFavorite = false, 
   });
 
-  /// Indique si le produit est encore en stock
   bool get isInStock => quantity > 0;
 
   /// Copie avec modification partielle
